@@ -1,0 +1,64 @@
+body {
+background-color: deepskyblue;
+color: black;
+}
+
+/*
+img {
+width:100px;
+height:100px;
+}
+*/
+
+h4 {
+font-style: italic;
+}
+
+main {
+margin: 4px;
+}
+
+article {
+padding: 4px;
+padding-bottom: 0px;
+margin: 0px;
+background: rgb(255, 174, 0);
+}
+
+/* Add your flexbox CSS below here */
+
+section {
+display: flex;
+flex-wrap: wrap;
+}
+
+
+/* Code for the Wildlowers button */
+.button {
+  font: bold 22px Arial;
+  text-decoration: none;
+  background-color:  rgb(255, 174, 0);
+  color: darkslategray;
+  padding: 2px 6px 2px 6px;
+  margin-right:30px;
+  margin-top: 7px;
+  border-radius: 9px;
+  border-top: 1px solid  rgb(255, 174, 0);
+  border-right: 2px solid darkslategray;
+  border-bottom: 2px solid darkslategray;
+  border-left: 1px solid  rgb(255, 174, 0);
+}
+
+.button:hover {
+  background-color: lightsalmon;
+  color:  navy;
+  border-top: 1px solid  lightsalmon;
+  border-right: 2px solid navy;
+  border-bottom: 2px solid navy;
+  border-left: 1px solid  lightsalmon;
+}
+
+.right {
+    float:right;
+    margin-right:72px;
+}

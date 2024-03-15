@@ -1,0 +1,40 @@
+article {
+padding: 4px;
+margin: 0px;
+background-color: springgreen;
+}
+
+/* Add your flexbox CSS below here */
+
+section {
+display: flex;
+}
+
+div {
+background-color:darkgreen;
+color:lemonchiffon;
+margin: 0;
+font-family: 'Kite One';
+}
+
+/* Above this point is some of the code from style.css */
+
+.large {
+width: 340px;
+border-color: black;
+border-style: solid;
+border-width: 3px;
+}
+
+h4 {
+font-style: italic;
+}
+
+main {
+margin: 4px;
+}
+
+body {
+height:100vh;
+  
+}

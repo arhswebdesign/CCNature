@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<!-- Coding work by Ned Young, 2019-2023. The order of flower species in this project are by color, in the order used by Kate Carter in "Wildflowers of Cape Cod and the Islands", 2008, The Countryman Press, Woodstock, Vermont. I have updated the species names according to what is currently used in iNaturalist, which seems very up-to-date.-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cape Nature</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />   
+    <link href='https://fonts.googleapis.com/css?family=Kite One' rel='stylesheet'>
+   </head>
+   <body>
+    <div>
+        <nav>        
+            <a href="lep_pages/lep_index.html" class="button right far">Butterflies</a>
+            <a href="bird_pp/bird_index.html" class="button right">Birds</a>
+        </nav>
+        <header>
+            <h1>Wildflowers of Cape Cod</h1>
+        </header>
+    </div>
+    
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> <strong>Show all</strong></button>
+      <button class="btn" onclick="filterSelection('April')"> April</button>
+      <button class="btn" onclick="filterSelection('May')"> May</button>
+      <button class="btn" onclick="filterSelection('June')"> June</button>
+      <button class="btn" onclick="filterSelection('July')"> July</button>
+          <button class="btn" onclick="filterSelection('August')">August</button>      <button class="btn" onclick="filterSelection('September')">September</button>      <button class="btn" onclick="filterSelection('October')">October</button>
+    </div>
+    <br>
+    <section>
+      <!-- yellow flowers -->
+      <article class="season May June July August September">
+        <a href="flower_pp/Artemisia_stelleriana.html" ><img src="flower_images/Artemisia_stelleriana_SQ.jpg" alt="Hoary Mugwort" title="Hoary Mugwort"></a>
+      </article>
+      <article class="season July August September October">
+        <a href="flower_pp/Euthamia_graminifolia.html"><img src="flower_previews/Euthamia_graminifolia_PV.jpg" alt="Slender Fragrant Goldenrod" title="Slender Fragrant Goldenrod"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Pityopsis_falcata.html" ><img src="flower_images/Pityopsis_falcata_SQ.jpg" alt="Sickleleaf Silk-Grass" title="Sickleleaf Silk-Grass"></a>
+      </article>
+      <article class="season June July August September October">
+        <a href="flower_pp/Rudbeckia_hirta.html" ><img src="flower_images/Rudbeckia_hirta_SQ.jpg" alt="Black-eyed Susan" title="Black-eyed Susan"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Solidago_juncea.html"><img src="flower_previews/Solidago_juncea_PV.jpg" alt="Early Goldenrod" title="Early Goldenrod"></a>
+      </article>
+      <article class="season July August September October">
+        <a href="flower_pp/Solidago_nemoralis.html"><img src="flower_previews/Solidago_nemoralis_PV.jpg" alt="Gray Goldenrod" title="Gray Goldenrod"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Solidago_odora.html"><img src="flower_previews/Solidago_odora_PV.jpg" alt="Sweet Goldenrod" title="Sweet Goldenrod"></a>
+      </article>
+      <article class="season July August September October">
+        <a href="flower_pp/Solidago_rugosa.html" ><img src="flower_images/Solidago_rugosa_SQ.jpg" alt="Rough-Stemmed Goldenrod" title="Rough-Stemmed Goldenrod"></a>
+      </article>
+      <article class="season August September October November">
+        <a href="flower_pp/Solidago_sempervirens.html" ><img src="flower_images/Solidago_sempervirens_SQ.jpg" alt="Seaside Goldenrod" title="Seaside Goldenrod"></a>
+      </article>
+      <article class="season June July August">
+        <a href="flower_pp/Opuntia_humifusa.html" ><img src="flower_images/Opuntia_humifusa_SQ.jpg" alt="Prickly Pear" title="Prickly Pear"></a>
+      </article>
+      <article class="season June July August September">
+        <a href="flower_pp/Oenothera_biennis.html" ><img src="flower_images/Oenothera_biennis_SQ.jpg" alt="Evening Primrose" title="Evening Primrose"></a>
+      </article>
+      <article class="season June July August September">
+        <a href="flower_pp/Linaria_vulgaris.html" ><img src="flower_images/Linaria_vulgaris_SQ.jpg" alt="Toadflax" title="Toadflax"></a>
+      </article>
+      <article class="season June July August September">
+        <a href="flower_pp/Verbascum_thapsus.html" ><img src="flower_images/Verbascum_thapsus_SQ.jpg" alt="Mullein" title="Mullein"></a>
+      </article>
+      <article class="season June July August September">
+        <a href="flower_pp/Hypericum_perforatum.html" ><img src="flower_images/Hypericum_perforatum_SQ.jpg" alt="St. John's Wort" title="St. John's Wort"></a>
+      </article>
+      <article class="season May June July August September">
+        <a href="flower_pp/Barbarea_vulgaris.html" ><img src="flower_images/Barbarea_vulgaris_SQ.jpg" alt="Yellow Rocket" title="Yellow Rocket"></a>
+      </article>
+      <article class="season July August">
+        <a href="flower_pp/Baptisia_tinctoria.html" ><img src="flower_images/Baptisia_tinctoria_SQ.jpg" alt="Wild Indigo" title="Wild Indigo"></a>
+      </article>
+      <article class="season May June">
+        <a href="flower_pp/Cytisus_scoparius.html" ><img src="flower_images/Cytisus_scoparius_SQ.jpg" alt="Scotch Broom" title="Scotch Broom"></a>
+      </article>
+      <article class="season June July August September">
+        <a href="flower_pp/Lotus_corniculatus.html" ><img src="flower_images/Lotus_corniculatus_SQ.jpg" alt="Birdsfoot Trefoil" title="Birdsfoot Trefoil"></a>
+      </article>
+      <article class="season May June July">
+        <a href="flower_pp/Chelidonium_majus.html"><img src="flower_images/Chelidonium_majus_SQ.jpg" alt="Celandine" title="Celandine"></a>
+      </article>
+      <article class="season May June">
+        <a href="flower_pp/Hudsonia_tomentosa.html"><img src="flower_images/Hudsonia_tomentosa_SQ.jpg" alt="Beach Heather" title="Beach Heather"></a>
+      </article>
+      <article class="season May June">
+        <a href="flower_pp/Potentilla_canadensis.html"><img src="flower_images/Potentilla_canadensis_SQ.jpg" alt="Old Field Cinquefoil" title="Old Field Cinquefoil"></a>
+      </article>
+      <article class="season May June July August September">
+        <a href="flower_pp/Euphorbia_cyparissias.html"><img src="flower_images/Euphorbia_cyparissias_SQ.jpg" alt="Cypress Spurge" title="Cypress Spurge"></a>
+      </article>
+      <!-- green and brown flowers -->
+      <article class="season March April May">
+        <a href="flower_pp/Symplocarpus_foetidus.html"><img src="flower_images/Symplocarpus_foetidus_SQ.jpg" alt="Skunk Cabbage" title="Skunk Cabbage"></a>
+      </article>
+      <article class="season July August September October">
+        <a href="flower_pp/Erechtites_hieraciifolius.html"><img src="flower_previews/Erechtites_hieraciifolius_PV.jpg" alt="Burnweed" title="Burnweed"></a>
+      </article>
+      <article class="season June July August September">
+        <a href="flower_pp/Rumex_crispus.html"><img src="flower_previews/Rumex_crispus_PV.jpg" alt="Curly dock" title="Curly dock"></a>
+      </article>
+      <article class="season May June">
+        <a href="flower_pp/Toxicodendron_radicans.html"><img src="flower_images/Toxicodendron_radicans_SQ.jpg" alt="Poison Ivy" title="Poison Ivy"></a>
+      </article>
+      <!-- white flowers -->
+      <article class="season June July August">
+        <a href="flower_pp/Achillea_millefolium.html"><img src="flower_images/Achillea_millefolium_SQ.png" alt="Yarrow" title="Yarrow"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Eupatorium_hyssopifolium.html"><img src="flower_previews/Eupatorium_hyssopifolium_PV.jpg" alt="Hyssopleaf Thoroughwort" title="Hyssopleaf Thoroughwort"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Eupatorium_perfoliatum.html"><img src="flower_previews/Eupatorium_perfoliatum_PV.jpg" alt="Boneset" title="Boneset"></a>
+      </article>
+      <article class="season August September October">
+        <a href="flower_pp/Eurybia_divaricata.html"><img src="flower_previews/Eurybia_divaricata_PV.jpg" alt="White Wood Aster" title="White Wood Aster"></a>
+      </article>
+      <article class="season June July August">
+        <a href="flower_pp/Leucanthemum_vulgare.html"><img src="flower_images/Leucanthemum_vulgare_SQ.jpg" alt="Oxeye Daisy" title="Oxeye Daisy"></a>
+      </article>
+      <article class="season August September October">
+        <a href="flower_pp/Pseudognaphalium_obtusifolium.html"><img src="flower_images/Pseudognaphalium_obtusifolium_SQ.jpg" alt="Sweet Everlasting" title="Sweet Everlasting"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Sericocarpus_asteroides.html"><img src="flower_previews/Sericocarpus_asteroides_PV.jpg" alt="Toothed White-topped Aster" title="Toothed White-topped Aster"></a>
+      </article>
+      <article class="season July August September October">
+        <a href="flower_pp/Polygonella_articulata.html"><img src="flower_previews/Polygonella_articulata_PV.jpg" alt="Coastal Jointweed" title="Coastal Jointweed"></a>
+      </article>
+
+      <article class="season July August September October">
+        <a href="flower_pp/Reynoutria_japonica.html"><img src="flower_images/Reynoutria_japonica_SQ.jpg" alt="Japanese Knotweed" title="Japanese Knotweed"></a>
+      </article>
+      <article class="season April May June">
+        <a href="flower_pp/Anemonoides_nemorosa.html"><img src="flower_previews/Anemonoides_nemorosa_PV.jpg" alt="Wood Anemone" title="Wood Anemone"></a>
+      </article>
+      <article class="season August">
+        <a href="flower_pp/Clethra_alnifolia.html"><img src="flower_images/Clethra_alnifolia_SQ.jpg" alt="Sweet Pepperbush" title="Sweet Pepperbush"></a>
+      </article>
+        
+      <article class="season June July August">
+        <a href="flower_pp/Melampyrum_lineare.html"><img src="flower_images/Melampyrum_lineare_SQ.jpg" alt="Cow wheat" title="Cow wheat"></a>
+      </article>
+      <article class="season May June">
+        <a href="flower_pp/Aralia_nudicaulis.html"><img src="flower_images/Aralia_nudicaulis_SQ.jpg" alt="Wild Sarsaparilla" title="Wild Sarsaparilla"></a>
+      </article>
+      <article class="season May June">
+        <a href="flower_pp/Arctostaphylos_uva-ursi.html"><img src="flower_images/Arctostaphylos_uva-ursi_SQ.jpg" alt="Kinnikinnik" title="Kinnikinnik"></a>
+      </article>
+      <article class="season April May">
+        <a href="flower_pp/Epigaea_repens.html"><img src="flower_images/Epigaea_repens_SQ.jpg" alt="Trailing Arbutus" title="Trailing Arbutus"></a>
+      </article>
+      <article class="season July August">
+        <a href="flower_pp/Gaultheria_procumbens.html"><img src="flower_images/Gaultheria_procumbens_SQ.jpg" alt="Wintergreen" title="Wintergreen"></a>
+      </article>
+      <article class="season May June">
+        <a href="flower_pp/Gaylussacia_baccata.html"><img src="flower_images/Gaylussacia_baccata_SQ.jpg" alt="Black Huckleberry" title="Black Huckleberry"></a>
+      </article>
+      <article class="season May June">
+        <a href="flower_pp/Vaccinium_angustifolium.html"><img src="flower_images/Vaccinium_angustifolium_SQ.jpg" alt="Lowbush Blueberry" title="Lowbush Blueberry"></a>
+      </article>
+      <article class="season June July August">
+        <a href="flower_pp/Lonicera_japonica.html"><img src="flower_images/Lonicera_japonica_SQ.png" alt="Japanese Honeysuckle" title="Japanese Honeysuckle"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Monotropa_uniflora.html"><img src="flower_images/Monotropa_uniflora_SQ.png" alt="Indian Pipe" title="Indian Pipe"></a>
+      </article>
+      <article class="season May June">
+        <a href="flower_pp/Maianthemum_canadense.html"><img src="flower_images/Maianthemum_canadense_SQ.jpg" alt="Mayflower" title="Mayflower"></a>
+      </article>
+      <article class="season May June July August">
+        <a href="flower_pp/Maianthemum_stellatum.html"><img src="flower_previews/Maianthemum_stellatum_PV.jpg" alt="Star-flowered Lily-of-the-Valley" title="Star-flowered Lily-of-the-Valley"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Yucca_filamentosa.html"><img src="flower_images/Yucca_filamentosa_SQ.jpg" alt="Yucca" title="Yucca"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Calystegia_sepium.html"><img src="flower_previews/Calystegia_sepium_PV.jpg" alt="Hedge Bindweed" title="Hedge Bindweed"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Cakile_edentula.html"><img src="flower_images/Cakile_edentula_SQ.jpg" alt="Sea Rocket" title="Sea Rocket"></a>
+      </article>
+      <article class="season June July August">
+        <a href="flower_pp/Datura_stramonium.html"><img src="flower_images/Datura_stramonium_SQ.png" alt="Jimsonweed" title="Jimsonweed"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Daucus_carota.html"><img src="flower_images/Daucus_carota_SQ.jpg" alt="Queen Anne's Lace" title="Queen Anne's Lace"></a>
+      </article>
+      <article class="season May June July August">
+        <a href="flower_pp/Melilotus_albus.html"><img src="flower_previews/Melilotus_albus_PV.jpg" alt="White Sweetclover" title="White Sweetclover"></a>
+      </article>
+      <article class="season June July August">
+        <a href="flower_pp/Silene_latifolia.html"><img src="flower_images/Silene_latifolia_SQ.jpg" alt="White Campion" title="White Campion"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Eriocaulon_aquaticum.html"><img src="flower_previews/Eriocaulon_aquaticum_PV.jpg" alt="Common Pipewort" title="Common Pipewort"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Phytolacca_americana.html"><img src="flower_images/Phytolacca_americana_SQ.png" alt="Pokeweed" title="Pokeweed"></a>
+      </article>
+      <article class="season May June">
+        <a href="flower_pp/Lysimachia_borealis.html"><img src="flower_images/Lysimachia_borealis_SQ.jpg" alt="Starflower" title="Starflower"></a>
+      </article>
+      <article class="season April May">
+        <a href="flower_pp/Prunus_maritima.html"><img src="flower_images/Prunus_maritima_SQ.jpg" alt="Beach Plum" title="Beach Plum"></a>
+      </article>
+      <article class="season June July">
+        <a href="flower_pp/Rosa_multiflora.html"><img src="flower_images/Rosa_multiflora_SQ.jpg" alt="Multiflora Rose" title="Multiflora Rose"></a>
+      </article>
+      <article class="season June July">
+        <a href="flower_pp/Rubus_flagellaris.html"><img src="flower_images/Rubus_flagellaris_SQ.jpg" alt="Dewberry" title="Dewberry"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Nymphaea_odorata.html"><img src="flower_images/Nymphaea_odorata_SQ.jpg" alt="Water Lily" title="Water Lily"></a>
+      </article>
+      <article class="season July August">
+        <a href="flower_pp/Chimaphila_maculata.html"><img src="flower_images/Chimaphila_maculata_SQ.jpg" alt="Wintergreen" title="Wintergreen"></a>
+      </article>
+      <!-- orange flowers -->
+      <article class="season July August September">
+        <a href="flower_pp/Impatiens_capensis.html"><img src="flower_images/Impatiens_capensis_SQ.jpg" alt="Jewelweed" title="Jewelweed"></a>
+      </article>
+      <article class="season March April">
+        <a href="flower_pp/Corema_conradii.html"><img src="flower_images/Corema_conradii_SQ.jpg" alt="Broom Crowberry" title="Broom Crowberry"></a>
+      </article>
+      <article class="season July August">
+        <a href="flower_pp/Lobelia_cardinalis.html"><img src="flower_images/Lobelia_cardinalis_SQ.jpg" alt="Cardinal Flower" title="Cardinal Flower"></a>
+      </article>
+      <article class="season June July August">
+        <a href="flower_pp/Asclepias_tuberosa.html"><img src="flower_images/Asclepias_tuberosa_SQ.jpg" alt="Butterfly Milkweed" title="Butterfly Milkweed"></a>
+      </article>
+      <!-- purple and blue flowers -->
+      <article class="season June July August September October">
+        <a href="flower_pp/Cichorium_intybus.html"><img src="flower_images/Cichorium_intybus_SQ.jpg" alt="Chicory" title="Chicory"></a>
+      </article>
+      <article class="season June July August">
+        <a href="flower_pp/Nuttallanthus_canadensis.html"><img src="flower_images/Nuttallanthus_canadensis_SQ.jpg" alt="Blue Toadflax" title="Blue Toadflax"></a>
+      </article>
+      <article class="season June July August">
+        <a href="flower_pp/Limonium_carolinianum.html"><img src="flower_images/Limonium_carolinianum_SQ.jpg" alt="Sea Lavender" title="Sea Lavender"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Lythrum_salicaria.html"><img src="flower_images/Lythrum_salicaria_SQ.jpg" alt="Purple Loosestrife" title="Purple Loosestrife"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Rhexia_virginica.html"><img src="flower_previews/Rhexia_virginica_PV.jpg" alt="Virginia Meadowbeauty" title="Virginia Meadowbeauty"></a>
+      </article>
+      <article class="season May June July August September">
+        <a href="flower_pp/Lamium_purpureum.html"><img src="flower_images/Lamium_purpureum_SQ.jpg" alt="Red Deadnettle" title="Red Deadnettle"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Prunella_vulgaris.html"><img src="flower_images/Prunella_vulgaris_SQ.jpg" alt="Self-Heal" title="Self-Heal"></a>
+      </article>
+      <article class="season June July August">
+        <a href="flower_pp/Solanum_dulcamara.html"><img src="flower_images/Solanum_dulcamara_SQ.png" alt="Climbing Nightshade" title="Climbing Nightshade"></a>
+      </article>
+      <article class="season June July">
+        <a href="flower_pp/Lathyrus_japonicus.html"><img src="flower_images/Lathyrus_japonicus_SQ.png" alt="Seaside Pea" title="Seaside Pea"></a>
+      </article>
+      <article class="season July August September October">
+        <a href="flower_pp/Lespedeza_capitata.html"><img src="flower_images/Lespedeza_capitata_SQ.png" alt="Round-headed Bush Clover" title="Round-headed Bush Clover"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Pontederia_cordata.html"><img src="flower_images/Pontederia_cordata_SQ.jpg" alt="Pickerelweed" title="Pickerelweed"></a>
+      </article>
+<!-- Pink flowers -->
+      <article class="season June July August September October">
+        <a href="flower_pp/Centaurea_stoebe.html"><img src="flower_previews/Centaurea_stoebe_PV.jpg" alt="Spotted Knapweed" title="Spotted Knapweed"></a>
+      </article>
+      <article class="season July August">
+        <a href="flower_pp/Coreopsis_rosea.html"><img src="flower_previews/Coreopsis_rosea_PV.jpg" alt="Rose coreopsis" title="Rose coreopsis"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Sabatia_kennedyana.html"><img src="flower_previews/Sabatia_kennedyana_PV.jpg" alt="Plymouth Gentian" title="Plymouth Gentian"></a>
+      </article>
+      <article class="season June July">
+        <a href="flower_pp/Kalima_angustifolia.html"><img src="flower_images/Kalima_angustifolia_SQ.png" alt="Sheep Laurel" title="Sheep Laurel"></a>
+      </article>
+      <article class="season July August">
+        <a href="flower_pp/Decodon_verticillatus.html"><img src="flower_images/Decodon_verticillatus_SQ.jpg" alt="Water-willow" title="Water-willow"></a>
+      </article>
+      <article class="season July August">
+        <a href="flower_pp/Hibiscus_moscheutos.html"><img src="flower_images/Hibiscus_moscheutos_SQ.jpg" alt="Swamp Rose Mallow" title="Swamp Rose Mallow"></a>
+      </article>
+      <article class="season June July August">
+        <a href="flower_pp/Asclepias_amplexicaulis.html"><img src="flower_images/Asclepias_amplexicaulis_SQ.jpg" alt="Clasping Milkweed" title="Clasping Milkweed"></a>
+      </article>
+      <article class="season May June">
+        <a href="flower_pp/Cypripedium_acaule.html"><img src="flower_images/Cypripedium_acaule_SQ.jpg" alt="Pink Lady's Slipper" title="Pink Lady's Slipper"></a>
+      </article>
+      <article class="season June July August">
+        <a href="flower_pp/Securigera_varia.html"><img src="flower_images/Securigera_varia_SQ.jpg" alt="Crown Vetch" title="Crown Vetch"></a>
+      </article>
+      <article class="season July August September">
+        <a href="flower_pp/Lathyrus_latifolius.html"><img src="flower_images/Lathyrus_latifolius_SQ.png" alt="Sweet Pea" title="Sweet Pea"></a>
+      </article>
+      <article class="season June July">
+        <a href="flower_pp/Robinia_hispida.html"><img src="flower_images/Robinia_hispida_SQ.jpg" alt="Bristly Locust" title="Bristly Locust"></a>
+      </article>
+      <article class="season June July August September October">
+        <a href="flower_pp/Trifolium_pratense.html"><img src="flower_images/Trifolium_pratense_SQ.jpg" alt="Red Clover" title="Red Clover"></a>
+      </article>
+      <article class="season June July August September">
+        <a href="flower_pp/Saponaria_officinalis.html"><img src="flower_images/Saponaria_officinalis_SQ.jpg" alt="Bouncing Bet" title="Bouncing Bet"></a>
+      </article>
+      <article class="season June July August September October">
+        <a href="flower_pp/Rosa_rugosa.html"><img src="flower_images/Rosa_rugosa_SQ.jpg" alt="Beach Rose" title="Beach Rose"></a>
+      </article>
+
+    </section>
+   <script src="script.js"></script>
+  </body>
+</html>

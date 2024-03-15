@@ -1,0 +1,38 @@
+body {
+background-color: navy;
+color: white;
+
+}
+
+img {
+border-color: gold;
+border-style: solid;
+border-width: 3px;
+}
+
+h4 {
+font-style: italic;
+}
+
+main {
+margin: 4px;
+}
+
+.btn {
+background-color: gold;
+font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #FF9900;
+  color:  navy;
+  border-top: 1px solid  lightsalmon;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 1px solid  lightsalmon;
+}
+
+figure{
+    float:left;
+    margin: 9px;
+}
